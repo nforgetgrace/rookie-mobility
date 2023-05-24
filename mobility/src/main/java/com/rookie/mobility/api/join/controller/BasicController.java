@@ -1,7 +1,8 @@
-package com.rookie.mobility.api.controller;
+package com.rookie.mobility.api.join.controller;
 
-import org.springframework.context.annotation.Description;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -26,9 +27,20 @@ import lombok.extern.slf4j.Slf4j;
 public class BasicController {
 
 	
-    @GetMapping("/get")
-    @Description("테스트 get 함수")
-    public String get(@RequestParam String name){
+    @PostMapping("/join")
+    public String memberJoin(@RequestBody String name,
+    						@RequestBody String id,
+    						@RequestBody String pw,
+    						@RequestBody String phone,
+    						@RequestBody String gender,
+    						@RequestBody String nick){
+
+    	String rst = name + " " + id + " " + pw + " " + phone + " " + gender + " " + nick;
+        return rst;
+    }
+    
+    @GetMapping("/login")
+    public String m(@RequestParam String name){
 
         return name;
     }
