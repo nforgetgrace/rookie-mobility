@@ -10,7 +10,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
 /**
-* @package : com.ktds.rookie.library.domain.controller
+* @package : com.ktds.rookie.library.domain.controller 
 * @name : BasicController.java
 * @date : 2023-04-05 오후 13:45
 * @author : Jung Jae gook
