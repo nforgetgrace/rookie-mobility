@@ -1,4 +1,4 @@
-package com.rookie.mobility.api.join.controller;
+package com.rookie.mobility.api.member.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
