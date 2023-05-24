@@ -24,10 +24,10 @@ import lombok.extern.slf4j.Slf4j;
 @RestController
 @RequestMapping("/api") 
 @Slf4j
-public class JoinController {
+public class MemberController {
 
 	
-    @PostMapping("/join")
+    @PostMapping("/member1")
     public String memberJoin(@RequestBody String name,
     						@RequestBody String id,
     						@RequestBody String pw,
@@ -39,7 +39,7 @@ public class JoinController {
         return rst;
     }
     
-    @GetMapping("/login")
+    @GetMapping("/member2")
     public String m(@RequestParam String name){
 
         return name;
