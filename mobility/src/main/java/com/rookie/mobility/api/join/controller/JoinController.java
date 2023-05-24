@@ -24,7 +24,7 @@ import lombok.extern.slf4j.Slf4j;
 @RestController
 @RequestMapping("/api") 
 @Slf4j
-public class BasicController {
+public class JoinController {
 
 	
     @PostMapping("/join")
